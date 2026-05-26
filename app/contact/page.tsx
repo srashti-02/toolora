@@ -54,7 +54,7 @@ export default function ContactPage() {
                     </h3>
 
                     <p className="text-zinc-400 mt-2">
-                      ksrashti5@gmail.com
+                      toolorasupport@gmail.com
                     </p>
 
                   </div>

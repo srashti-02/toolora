@@ -14,6 +14,7 @@ import {
   Hash,
   Sigma,
   ArrowRight,
+  ImageIcon,
 } from "lucide-react";
 
 const tools = [
@@ -88,14 +89,13 @@ const tools = [
     href: "/tools/image-compressor",
     icon: Image,
   },
-
   {
-    title: "Background Remover",
-    description:
-      "Remove image backgrounds instantly using AI.",
-    href: "/tools/background-remover",
-    icon: Eraser,
-  },
+  title: "JPG to PNG Converter",
+  description:
+    "Convert JPG and JPEG images into high-quality PNG files instantly.",
+  href: "/tools/jpg-to-png",
+  icon: ImageIcon,
+},
 
   {
     title: "Image to PDF",
@@ -104,6 +104,13 @@ const tools = [
     href: "/tools/image-to-pdf",
     icon: ScanText,
   },
+  {
+  title: "Resume Builder",
+  description:
+    "Create professional resumes instantly with live preview and PDF download.",
+  href: "/tools/resume-builder",
+  icon: FileText,
+},
 ];
 
 export default function ToolsPage() {

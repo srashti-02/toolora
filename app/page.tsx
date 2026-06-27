@@ -106,20 +106,7 @@ const defaultForm: FormData = {
   achievements:
     "Built multiple productivity tools.\nImproved SEO and UI/UX of Toolora.\nCreated responsive utility applications.",
 
-  projects: [
-    {
-      id: "1",
-      title:
-        "Toolora - Multi Tool Productivity Platform",
-
-      tech:
-        "Next.js, Tailwind CSS, TypeScript",
-
-      points:
-        "Built modern productivity and utility tools.\nImplemented responsive design and SEO optimization.\nCreated image tools, calculators, and resume builder.",
-    },
-  ],
-
+  projects: [],
   experiences: [],
 };
 
@@ -1212,3 +1199,6 @@ function Section({
     </section>
   );
 }
+
+
+

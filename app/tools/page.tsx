@@ -104,13 +104,6 @@ const tools = [
     href: "/tools/image-to-pdf",
     icon: ScanText,
   },
-  {
-  title: "Resume Builder",
-  description:
-    "Create professional resumes instantly with live preview and PDF download.",
-  href: "/tools/resume-builder",
-  icon: FileText,
-},
 ];
 
 export default function ToolsPage() {

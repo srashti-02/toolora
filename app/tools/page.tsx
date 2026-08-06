@@ -15,7 +15,8 @@ import {
   ImageIcon,
   PercentCircle,
   Receipt,
-  Ruler
+  Ruler,
+  BadgePercent
 } from "lucide-react";
 
 const tools = [
@@ -43,13 +44,7 @@ const tools = [
     icon: Calculator,
   },
 
-  {
-    title: "Pomodoro Timer",
-    description:
-      "Boost productivity using focus sessions and breaks.",
-    href: "/tools/pomodoro-timer",
-    icon: TimerReset,
-  },
+ 
 
   {
     title: "CGPA Calculator",
@@ -90,12 +85,26 @@ const tools = [
   icon: PercentCircle,
 },
 {
+  title: "Discount Calculator",
+  description:
+    "Calculate discounts, final price, reverse discounts and GST instantly.",
+  href: "/tools/discount-calculator",
+  icon: BadgePercent,
+},
+{
   title: "Unit Converter",
   description:
     "Convert length, weight, temperature, storage, time and speed instantly.",
   href: "/tools/unit-converter",
   icon: Ruler,
 },
+ {
+    title: "Pomodoro Timer",
+    description:
+      "Boost productivity using focus sessions and breaks.",
+    href: "/tools/pomodoro-timer",
+    icon: TimerReset,
+  },
 
   {
     title: "PDF Merger",

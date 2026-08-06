@@ -18,7 +18,9 @@ import {
   Receipt,
   Ruler,
   BadgePercent,
-  Coins
+  Coins, 
+  Mails, 
+  Link as LinkIcon
 } from "lucide-react";
 
 const tools = [
@@ -35,6 +37,14 @@ const tools = [
     description:
       "Generate secure and strong passwords instantly.",
     href: "/tools/password-generator",
+    icon: Lock,
+  },
+
+  {
+    title: "QR code Generator",
+    description:
+      "Generate QR codes for URLs, phone numbers, and more.",
+    href: "/tools/qr-generator",
     icon: Lock,
   },
 
@@ -121,6 +131,20 @@ const tools = [
     "Convert currencies using live exchange rates with support for major world currencies.",
   href: "/tools/currency-converter",
   icon: Coins,
+},
+{
+  title: "Temporary Mail",
+  description:
+    "Generate a disposable email address instantly to receive verification emails, OTPs and temporary messages.",
+  href: "/tools/temp-mail",
+  icon: Mails,
+},
+{
+  title: "URL Encoder & Decoder",
+  description:
+    "Encode and decode URLs instantly with a fast, secure and browser-based tool.",
+  href: "/tools/url-encoder-decoder",
+    icon: LinkIcon,
 },
  {
     title: "Pomodoro Timer",

@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-
-import NewsletterSection from "@/app/components/layout/NewsletterSection";
-import Footer from "@/app/components/layout/Footer";
-
-
-import "./globals.css";
+import Script from "next/script";
 
 import Navbar from "./components/layout/Navbar";
-// import Footer from "./components/layout/Footer";
+import Footer from "@/app/components/layout/Footer";
+import NewsletterSection from "@/app/components/layout/NewsletterSection";
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,7 +18,6 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-
   metadataBase: new URL("https://toolora.vercel.app"),
 
   title: {
@@ -63,7 +59,6 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-
     title: "Toolora - Free Online Utility Tools",
 
     description:
@@ -88,7 +83,6 @@ export const metadata: Metadata = {
   },
 
   twitter: {
-
     card: "summary_large_image",
 
     title: "Toolora - Free Online Utility Tools",
@@ -109,31 +103,36 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
-
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <Script
+          id="google-adsense"
+          async
+          strategy="afterInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3431503765432271"
+          crossOrigin="anonymous"
+        />
+      </head>
 
       <body className="min-h-full flex flex-col bg-black text-white">
-
         {/* NAVBAR */}
         <Navbar />
 
         {/* PAGE CONTENT */}
         <main className="flex-1">
-
           {children}
-
         </main>
+
+        {/* NEWSLETTER */}
+        <NewsletterSection />
 
         {/* FOOTER */}
         <Footer />
-
       </body>
-
     </html>
   );
 }

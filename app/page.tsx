@@ -6,7 +6,7 @@ import {
   QrCode,
   Lock,
   Clock,
-  
+
 } from "lucide-react";
 
 const tools = [
@@ -96,10 +96,10 @@ export default function HomePage() {
       <section className="px-6 pb-20">
         <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { value: "12+", label: "Online Tools" },
+            { value: "20+", label: "Online Tools" },
             { value: "100%", label: "Free to Use" },
-            { value: "Fast", label: "Performance" },
-            { value: "24/7", label: "Available" },
+            { value: "<1s", label: "Instant Results" },
+            { value: "99.9%", label: "Accurate Results" },
           ].map((item) => (
             <div
               key={item.label}

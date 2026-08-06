@@ -17,7 +17,8 @@ import {
   PercentCircle,
   Receipt,
   Ruler,
-  BadgePercent
+  BadgePercent,
+  Coins
 } from "lucide-react";
 
 const tools = [
@@ -113,6 +114,13 @@ const tools = [
     "Convert length, weight, temperature, storage, time and speed instantly.",
   href: "/tools/unit-converter",
   icon: Ruler,
+},
+{
+  title: "Currency Converter",
+  description:
+    "Convert currencies using live exchange rates with support for major world currencies.",
+  href: "/tools/currency-converter",
+  icon: Coins,
 },
  {
     title: "Pomodoro Timer",

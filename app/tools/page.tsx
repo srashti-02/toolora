@@ -15,6 +15,7 @@ import {
   ImageIcon,
   PercentCircle,
   Receipt,
+  Ruler
 } from "lucide-react";
 
 const tools = [
@@ -87,6 +88,13 @@ const tools = [
     "Calculate percentages, percentage increase, decrease, marks percentage, and more in one place.",
   href: "/tools/percentage-calculator",
   icon: PercentCircle,
+},
+{
+  title: "Unit Converter",
+  description:
+    "Convert length, weight, temperature, storage, time and speed instantly.",
+  href: "/tools/unit-converter",
+  icon: Ruler,
 },
 
   {

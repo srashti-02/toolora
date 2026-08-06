@@ -13,6 +13,7 @@ import {
   Sigma,
   ArrowRight,
   ImageIcon,
+  PercentCircle,
   Receipt,
 } from "lucide-react";
 
@@ -80,6 +81,13 @@ const tools = [
     href: "/tools/factorial-calculator",
     icon: Hash,
   },
+    {
+  title: "Percentage Calculator",
+  description:
+    "Calculate percentages, percentage increase, decrease, marks percentage, and more in one place.",
+  href: "/tools/percentage-calculator",
+  icon: PercentCircle,
+},
 
   {
     title: "PDF Merger",

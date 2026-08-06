@@ -6,6 +6,7 @@ import {
   QrCode,
   Lock,
   Clock,
+  PercentCircle,
 } from "lucide-react";
 
 const tools = [
@@ -33,6 +34,13 @@ const tools = [
     href: "/tools/pomodoro-timer",
     icon: Clock,
   },
+  {
+  title: "Percentage Calculator",
+  description:
+    "Calculate percentages, percentage increase, decrease, marks percentage, and more in one place.",
+  href: "/tools/percentage-calculator",
+  icon: PercentCircle,
+},
   {
     title: "Image Compressor",
     description: "Compress images without losing quality.",

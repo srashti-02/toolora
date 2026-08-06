@@ -1,6 +1,5 @@
 import Link from "next/link";
 import PageHero from "../components/ui/pageHero";
-
 import {
   Type,
   Lock,
@@ -8,13 +7,13 @@ import {
   TimerReset,
   FileText,
   Image,
-  Eraser,
   ScanText,
   Percent,
   Hash,
   Sigma,
   ArrowRight,
   ImageIcon,
+  Receipt,
 } from "lucide-react";
 
 const tools = [
@@ -67,6 +66,14 @@ const tools = [
   },
 
   {
+    title: "GST Calculator",
+    description:
+      "Calculate GST instantly. Add or remove GST using 3%, 5%, 12%, 18%, 28%, or a custom GST rate.",
+    href: "/tools/gst-calculator",
+    icon: Receipt,
+  },
+
+  {
     title: "Factorial Calculator",
     description:
       "Find factorial values instantly for any number.",
@@ -89,13 +96,14 @@ const tools = [
     href: "/tools/image-compressor",
     icon: Image,
   },
+
   {
-  title: "JPG to PNG Converter",
-  description:
-    "Convert JPG and JPEG images into high-quality PNG files instantly.",
-  href: "/tools/jpg-to-png",
-  icon: ImageIcon,
-},
+    title: "JPG to PNG Converter",
+    description:
+      "Convert JPG and JPEG images into high-quality PNG files instantly.",
+    href: "/tools/jpg-to-png",
+    icon: ImageIcon,
+  },
 
   {
     title: "Image to PDF",
@@ -107,11 +115,8 @@ const tools = [
 ];
 
 export default function ToolsPage() {
-
   return (
-
     <div className="min-h-screen bg-black text-white">
-
       {/* HERO */}
       <PageHero
         badge="🛠 Toolora Utilities"
@@ -121,65 +126,47 @@ export default function ToolsPage() {
       />
 
       {/* TOOLS GRID */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-          {tools.map((tool, index) => {
-
+      <section className="mx-auto max-w-7xl px-6 py-20">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {tools.map((tool) => {
             const Icon = tool.icon;
 
             return (
-
               <div
-                key={index}
-                className="group bg-white/5 border border-white/10 rounded-3xl p-6 hover:border-purple-500/30 hover:bg-white/10 transition-all duration-300"
+                key={tool.href}
+                className="group rounded-3xl border border-white/10 bg-white/5 p-6 transition-all duration-300 hover:border-purple-500/30 hover:bg-white/10"
               >
-
                 {/* ICON */}
-                <div className="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center mb-5">
-
+                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-purple-500/10">
                   <Icon
                     size={28}
                     className="text-purple-400"
                   />
-
                 </div>
 
                 {/* TITLE */}
-                <h2 className="text-xl font-bold mb-3">
-
+                <h2 className="mb-3 text-xl font-bold">
                   {tool.title}
-
                 </h2>
 
                 {/* DESCRIPTION */}
-                <p className="text-zinc-400 text-sm leading-relaxed mb-7">
-
+                <p className="mb-7 text-sm leading-relaxed text-zinc-400">
                   {tool.description}
-
                 </p>
 
                 {/* BUTTON */}
                 <Link
                   href={tool.href}
-                  className="inline-flex items-center gap-2 text-purple-400 font-medium hover:text-purple-300 transition"
+                  className="inline-flex items-center gap-2 font-medium text-purple-400 transition hover:text-purple-300"
                 >
-
                   Open Tool
-
                   <ArrowRight size={16} />
-
                 </Link>
-
               </div>
             );
           })}
-
         </div>
-
       </section>
-
     </div>
   );
 }

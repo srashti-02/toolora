@@ -4,6 +4,7 @@ import {
   Type,
   Lock,
   Calculator,
+  CalculatorIcon,
   TimerReset,
   FileText,
   Image,
@@ -35,6 +36,21 @@ const tools = [
     href: "/tools/password-generator",
     icon: Lock,
   },
+
+   {
+    title: "Simple Calculator",
+    description:
+      "Perform basic arithmetic operations with ease.",
+    href: "/tools/simple-calculator",
+    icon: Calculator,
+  },
+  {
+  title: "Scientific Calculator",
+  description:
+    "Perform advanced mathematical calculations including trigonometry, logarithms, powers, roots and more.",
+  href: "/tools/scientific-calculator",
+  icon: CalculatorIcon,
+},
 
   {
     title: "Age Calculator",
